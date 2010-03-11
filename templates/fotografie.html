@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% load thumbnail %}
+
+{% block title %} Fotografie {% endblock %}
+
+{% block background %}fotografie{% endblock %}
+
+{% block js-inline %}
+$(function() {
+    $('#gallery a').lightBox({ 
+	imageLoading: '{{MEDIA_URL}}jquery-lightbox/images/lightbox-ico-loading.gif',
+	imageBtnClose: '{{MEDIA_URL}}jquery-lightbox/images/lightbox-btn-close.gif',
+	imageBtnPrev: '{{MEDIA_URL}}jquery-lightbox/images/lightbox-btn-prev.gif',
+	imageBtnNext: '{{MEDIA_URL}}jquery-lightbox/images/lightbox-btn-next.gif',
+	fixedNavigation: true,
+	txtImage: 'Fotografia',
+	txtOf: 'z'
+    });
+});
+
+{% endblock %}
+
+{% block center %}
+<div id="gallery">
+{% for photo in photos %}
+  <a href="{% thumbnail photo.image 730x730 %}" 
+  title=
+  "
+  {{photo.title}}<br/>
+  <span style='font-weight: normal;'>{{photo.description}}</span><br/><br/>
+  ">
+    <img src="{% thumbnail photo.image 120x120 %}" alt=""/>
+  </a>
+{% endfor %}
+</div>
+
+{% endblock %}

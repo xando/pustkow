@@ -1,0 +1,191 @@
+body {
+    background: black;
+}
+
+a:visited,
+a:link,
+a:hover {
+    text-decoration: underline;
+    color: grey;
+    text-align: right;
+    font-family: verdana;
+}
+
+#main {
+    margin:auto;
+    padding:0;
+    width:796px;
+    position: relative;
+}
+
+#footer{
+    position: absolute;
+    top: 613px;
+    right: 0px;
+    font-size:12px;
+}
+
+.obecnie {
+    background-image: url(/site_media/images/background.jpg);
+    background-repeat: no-repeat;
+    height:800px;
+}
+
+#obecnie {
+    position: relative;
+}
+
+.kiedys {
+    background-image: url(/site_media/images/background-kiedys.jpg);
+    background-repeat: no-repeat;
+    height:800px;
+}
+
+#kiedys {
+    position: relative;
+}
+
+.box {
+    padding:8px;
+    font-size: 11px;
+    position: absolute;
+    text-align:justify;
+    overflow : auto;
+}
+
+.box h1 {
+     font-size: 14px;
+     color: #FFFFFF;
+}
+
+#blue-box {
+    background-image: url(/site_media/images/blue-box.png);
+    height: 264px;
+    left: 35px;
+    top: 27px;
+    width: 656px;
+    border: 2px solid #333333;
+    font-family:Helvetica;
+    font-size:13px;
+    font-weight: bold;
+
+}
+
+#grey-box {
+    background-image: url(/site_media/images/grey-box.png);
+    height: 264px;
+    left: 35px;
+    top: 27px;
+    width: 656px;
+    border: 2px solid #333333;
+    font-family:Helvetica;
+    font-size:13px;
+    font-weight: bold;
+}
+
+#informacje {
+    background-color:#222222;
+    color:wheat;
+    font-family:verdana;
+    font-size:12px;
+    padding:20px;
+    margin-top: 10px;
+    height: 438px;
+}
+
+/* #green-box { */
+/*     width:562px; */
+/*     height:125px; */
+    
+/*     background-image: url(/site_media/images/green-box.png); */
+/* } */
+
+#nav-top {
+    position:relative;
+    background-color: #5c7500;
+    margin:0px 180px 0px 137px;
+    height: 18px;
+    filter:alpha(opacity=75);
+    moz-opacity:0.75;
+    opacity:0.75;
+    padding:3px 0px 5px 0px;
+}
+
+#nav-top #obecnie a{ 
+    background-image:url(/site_media/images/button_obecnie.png);
+    background-repeat:no-repeat;
+    color:#979F91;
+    width: 70px;
+    height: 20px;
+    font-family:tahoma;
+    font-size:11px;
+    margin-left: 20px;             
+    font-weight:bold;
+    text-decoration: none;
+    float: left;
+}
+
+#nav-top #kiedys a{ 
+    background-image:url(/site_media/images/button_kiedys.png);
+    background-repeat:no-repeat;
+    color:#979F91;
+    width: 70px;
+    height: 20px;
+    font-family:tahoma;
+    font-size:11px;
+    margin-left: 10px;             
+    font-weight:bold;
+    text-decoration: none;
+    float: left;
+}
+
+#nav-top #fotografie a{ 
+    background-image:url(/site_media/images/button_fotografie.png);
+    background-repeat:no-repeat;
+    color:#979F91;
+    width: 90px;
+    height: 20px;
+    font-family:tahoma;
+    font-size:11px;
+    margin-left: 10px;             
+    font-weight:bold;
+    text-decoration: none;
+    float: left;
+}
+
+/* #button { */
+/*     background-image:url(/site_media/images/obecnie.jpg); */
+/* } */
+
+#logo-top {
+            height: 100px;
+            background-image:url(/site_media/images/logo.gif);
+            background-repeat: no-repeat;
+            }
+
+#sublogo-top {
+               border: 1px solid red;
+               }
+/* jQuery lightBox plugin - Gallery style */
+
+#gallery {
+    background-color: #222;
+    padding: 10px 17px;
+    margin-top: 10px;
+    height: 457px;
+}
+
+#gallery a {
+    display: inline;
+    text-decoration:none;
+}
+
+#gallery a img{
+    border: 0px;
+    border: 1px solid ;
+}
+
+#gallery a img.hover{
+    border: 1px solid #ddbb11;
+}
+

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pustków Osiedle - {% block title %} {% endblock %}</title>
+    
+    <link rel="stylesheet" href="{{MEDIA_URL}}site.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{MEDIA_URL}}jquery-lightbox/css/jquery.lightbox-0.5.css" 
+	  type="text/css" media="screen" />
+    {% block css-include %}{% endblock %}    
+
+    <script type="text/javascript" src="{{MEDIA_URL}}jquery-1.3.2.js" ></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}jquery-lightbox/js/jquery.lightbox-0.5.js" ></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}main.js" ></script>
+
+    <script type="text/javascript">
+      {% block js-inline %}
+      {% endblock %}
+    </script>
+
+  </head>
+  <body>
+    <div id="main" class="{% block background %}obecnie{% endblock %}">
+      <div id="logo-top"></div>
+      <div id="nav-top">
+	<div class="menu" id="obecnie"><a href="/obecnie"></a></div>
+	<div class="menu" id="kiedys"><a href="/kiedys"></a></div>
+	<div class="menu" id="fotografie"><a href="/fotografie"></a></div>
+      </div>
+      
+      {% block center %}
+      {% endblock %}
+      <div id="footer" >
+	<a href="/informacje/">informacje o stronie</a>
+      </div>
+      
+    </div>
+
+
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-11337039-2");
+      pageTracker._trackPageview();
+      } catch(err) {}</script>
+    
+    </body>
+</html>

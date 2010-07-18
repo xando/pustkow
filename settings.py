@@ -19,7 +19,7 @@ LANGUAGE_CODE = 'pl-pl'
 
 SITE_ID = 1
 
-MEDIA_URL = '/site_media/'
+MEDIA_URL = '/static/'
 MEDIA_ROOT = PROJECT_ROOT+'/site_media/'
 
 ADMIN_MEDIA_PREFIX = '/media/'

@@ -26,7 +26,7 @@ a:hover {
 }
 
 .obecnie {
-    background-image: url(/site_media/images/background.jpg);
+    background-image: url(/static/images/background.jpg);
     background-repeat: no-repeat;
     height:800px;
 }
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .kiedys {
-    background-image: url(/site_media/images/background-kiedys.jpg);
+    background-image: url(/static/images/background-kiedys.jpg);
     background-repeat: no-repeat;
     height:800px;
 }
@@ -59,7 +59,7 @@ a:hover {
 }
 
 #blue-box {
-    background-image: url(/site_media/images/blue-box.png);
+    background-image: url(/static/images/blue-box.png);
     height: 264px;
     left: 35px;
     top: 27px;
@@ -72,7 +72,7 @@ a:hover {
 }
 
 #grey-box {
-    background-image: url(/site_media/images/grey-box.png);
+    background-image: url(/static/images/grey-box.png);
     height: 264px;
     left: 35px;
     top: 27px;
@@ -97,7 +97,7 @@ a:hover {
 /*     width:562px; */
 /*     height:125px; */
     
-/*     background-image: url(/site_media/images/green-box.png); */
+/*     background-image: url(/static/images/green-box.png); */
 /* } */
 
 #nav-top {
@@ -112,7 +112,7 @@ a:hover {
 }
 
 #nav-top #obecnie a{ 
-    background-image:url(/site_media/images/button_obecnie.png);
+    background-image:url(/static/images/button_obecnie.png);
     background-repeat:no-repeat;
     color:#979F91;
     width: 70px;
@@ -126,7 +126,7 @@ a:hover {
 }
 
 #nav-top #kiedys a{ 
-    background-image:url(/site_media/images/button_kiedys.png);
+    background-image:url(/static/images/button_kiedys.png);
     background-repeat:no-repeat;
     color:#979F91;
     width: 70px;
@@ -140,7 +140,7 @@ a:hover {
 }
 
 #nav-top #fotografie a{ 
-    background-image:url(/site_media/images/button_fotografie.png);
+    background-image:url(/static/images/button_fotografie.png);
     background-repeat:no-repeat;
     color:#979F91;
     width: 90px;
@@ -154,12 +154,12 @@ a:hover {
 }
 
 /* #button { */
-/*     background-image:url(/site_media/images/obecnie.jpg); */
+/*     background-image:url(/static/images/obecnie.jpg); */
 /* } */
 
 #logo-top {
             height: 100px;
-            background-image:url(/site_media/images/logo.gif);
+            background-image:url(/static/images/logo.gif);
             background-repeat: no-repeat;
             }
 

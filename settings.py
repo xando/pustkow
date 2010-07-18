@@ -53,7 +53,7 @@ INSTALLED_APPS = (
 
     'sorl.thumbnail',
     
-    'page',
+    'pustkow.page',
 )
 
 THUMBNAIL_PREFIX = '__'

@@ -22,7 +22,7 @@ SITE_ID = 1
 MEDIA_URL = '/static/'
 MEDIA_ROOT = PROJECT_ROOT+'/site_media/'
 
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 TEMPLATE_DIRS = (
     PROJECT_ROOT+'/templates/'
@@ -37,7 +37,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
     )
 
-ROOT_URLCONF = 'pustkow.urls'
+ROOT_URLCONF = 'pustkow_osiedle.urls'
 
 TEMPLATE_DIRS = (
     PROJECT_ROOT+'/templates/'
@@ -53,7 +53,7 @@ INSTALLED_APPS = (
 
     'sorl.thumbnail',
     
-    'pustkow.page',
+    'pustkow_osiedle.page',
 )
 
 THUMBNAIL_PREFIX = '__'

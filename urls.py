@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.conf import settings
 admin.autodiscover()
 
-from pustkow.page.views import *
+from pustkow_osiedle.page.views import *
 import settings 
 
 urlpatterns = patterns('', 

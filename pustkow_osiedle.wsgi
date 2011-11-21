@@ -1,10 +1,11 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "/home/services/virtualenvs/pustkow_osiedle/lib/python2.6/site-packages/" )))
+virtualenv = os.path.join(os.path.dirname(__file__), "../.virtualenv/bin/activate_this.py")
+execfile(virtualenv, dict(__file__=virtualenv))
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'pustkow_osiedle.settings'
-
-import django.core.handlers.wsgi
-application = django.core.handlers.wsgi.WSGIHandler()
+os.environ["DJANGO_SETTINGS_MODULE"] = "pustkow.settings"
+from django.core.handlers.wsgi import WSGIHandler
+application = WSGIHandler()

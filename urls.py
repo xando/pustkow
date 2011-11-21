@@ -3,8 +3,7 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
-from pustkow.page.views import *
-import settings
+from .page.views import *
 
 urlpatterns = patterns('',
     (r'^fotografie/?$', fotografie),

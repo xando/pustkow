@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
- 
+
 PROJECT_ROOT = os.path.dirname(__file__)
 
 DEBUG = True
@@ -22,7 +22,7 @@ SITE_ID = 1
 MEDIA_URL = '/static/'
 MEDIA_ROOT = PROJECT_ROOT+'/site_media/'
 
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 TEMPLATE_DIRS = (
     PROJECT_ROOT+'/templates/'
@@ -52,7 +52,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'sorl.thumbnail',
-    
+
     'pustkow.page',
 )
 

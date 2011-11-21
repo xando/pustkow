@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASE_ENGINE = 'sqlite3'
 DATABASE_NAME = PROJECT_ROOT+'/data/pustkow.db'
 
-TIME_ZONE = 'Europe/Warsaw Poland'
+# TIME_ZONE = 'Europe/Warsaw Poland'
 LANGUAGE_CODE = 'pl-pl'
 
 SITE_ID = 1
